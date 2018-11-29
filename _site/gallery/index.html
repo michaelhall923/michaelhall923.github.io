@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Test Page: Don't Panic</title>
+  
+    <title>Test Page: Don't Panic</title>
+  
+  <link rel="icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:300|Raleway:100" rel="stylesheet">
+  <link rel="stylesheet" href="/fonts/fontawesome-free-5.5.0-web/css/all.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
   <body>
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a href="/blog" class="drop-trigger">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2016/11/04/title-of-second-post.html">Newest Post</a></li>
 
     </ul>
@@ -54,7 +73,17 @@
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a href="/blog" class="drop-trigger">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2016/11/04/title-of-second-post.html">Newest Post</a></li>
 
     </ul>
