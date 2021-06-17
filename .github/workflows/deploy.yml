@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -40,6 +40,6 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           username: ${{secrets.SSH_USERNAME}}
 
-          script:
+          script: |
             cd /var/www/michael-hall.io/public_html
             git clone git@github.com:michaelhall923/portfolio.git
