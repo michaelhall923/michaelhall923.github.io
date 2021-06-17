@@ -1,0 +1,33 @@
+@import url('fonts.css');
+
+body {
+    font-family: Montserrat;
+}
+
+.body {
+    transition: background-color .3s ease-in-out;
+}
+
+.dark-mode .bg-gray-200 {
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.dark-mode .text-blue-800 {
+    color: rgba(191, 219, 254, var(--tw-text-opacity));
+}
+
+.dark-mode .text-gray-600 {
+    color: rgba(156, 163, 175, var(--tw-bg-opacity));
+}
+
+.dark-mode .text-gray-800 {
+    color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: LeagueSpartan;
+}
+
+.dark-mode #emblem path {
+    fill: url(#grad2);
+}
