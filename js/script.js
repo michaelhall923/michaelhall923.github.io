@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('body').removeClass('dark-mode');
     }
 
-    let framerate = 60, theta = 0, velocity = 0, acceleration = 0, accelerationConstant = .02, winding = false, windingVelocity = 3, friction = .03;
+    let framerate = 60, theta = 0, velocity = 0, acceleration = 0, accelerationConstant = .02, winding = false, windingVelocity = 1, friction = .03;
     setInterval(animate, 1000/framerate);
 
     function animate() {
@@ -26,7 +26,6 @@ $(document).ready(function() {
             velocity = 0;
             acceleration = 0;
             theta += windingVelocity;
-            if (theta < 0) theta = modulus(theta, 360);
         } else {
             acceleration = -(theta * accelerationConstant);
             velocity += acceleration;
@@ -42,7 +41,3 @@ $(document).ready(function() {
         winding = false;
     })
 });
-
-function modulus(a, n) {
-    return ((a % n ) + n ) % n;
-}
