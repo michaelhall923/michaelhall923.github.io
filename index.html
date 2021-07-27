@@ -8,6 +8,7 @@
 
     <!-- Stylesheets & Fonts -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?_=1">
 
@@ -38,7 +39,7 @@
             </div>
     
             <div id="hero" class="relative mb-16 sm:mb-32 md:mb-48 lg:mb-64">
-                <div id="emblem" class="absolute right-8 sm:right-16 lg:right-32 top-16 sm:top-8 xl:top-24 2xl:top-8 opacity-50 hover:opacity-90 sm:z-10 transition-opacity duration-300">
+                <div id="emblem" class="absolute right-8 sm:right-16 lg:right-32 top-16 sm:top-8 xl:top-24 2xl:top-8 opacity-90 hover:opacity-50 sm:z-10 transition-opacity duration-300">
                     <!-- <img src="img/mh-emblem.svg" alt="Emblem" class="w-64"> -->
                     <svg class="w-16 sm:w-24 md:w-32 lg:w-40 xl:w-48" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <defs>
@@ -60,8 +61,57 @@
                 </div>
             </div>
 
-            <div class="text-center">
-                <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-10">Projects</h2>
+            <div id="skills" class="text-center mb-16 sm:mb-32 md:mb-48 lg:mb-64">
+                <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Skills</h3>
+                <div class="grid grid-cols-3 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
+                    <div>
+                        <i class="devicon-html5-plain-wordmark skill-icon-1"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-php-plain skill-icon-1"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-css3-plain-wordmark skill-icon-1"></i>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 mb-10 sm:mb-12 md:mb-14 lg:mb-20">
+                    <div>
+                        <i class="devicon-mysql-plain-wordmark skill-icon-2"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-nodejs-plain-wordmark skill-icon-2"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-git-plain skill-icon-2"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-linux-plain skill-icon-2"></i>
+                    </div>
+                </div>
+                <div class="grid grid-cols-6">
+                    <div>
+                        <i class="devicon-laravel-plain-wordmark skill-icon-3"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-sass-plain skill-icon-3"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-java-plain-wordmark skill-icon-3"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-python-plain-wordmark skill-icon-3"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-photoshop-plain skill-icon-3"></i>
+                    </div>
+                    <div>
+                        <i class="devicon-illustrator-plain skill-icon-3"></i>
+                    </div>
+                </div>
+            </div> <!-- Skills -->
+
+            <div id="projects" class="text-center mb-16 sm:mb-32 md:mb-48 lg:mb-64">
+                <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Projects</h3>
                 <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
                     <div>
                         <a target="_blank" href="https://goldtonemusicgroup.com/">
@@ -71,7 +121,7 @@
                             <a target="_blank" href="https://goldtonemusicgroup.com/">
                                 Gold Tone Music Group
                             </a>
-                        </h3>
+                        </h4>
                     </div>
                     <div>
                         <a target="_blank" href="https://example.com/">
@@ -81,7 +131,7 @@
                             <a target="_blank" href="https://example.com/">
                                 Project 2
                             </a>
-                        </h3>
+                        </h4>
                     </div>
                     <div>
                         <a target="_blank" href="https://example.com/">
@@ -91,12 +141,15 @@
                             <a target="_blank" href="https://example.com/">
                                 Project 3
                             </a>
-                        </h3>
+                        </h4>
                     </div>
                 </div>
-            </div>
+            </div> <!-- Projects -->
+        </div> <!-- .container -->
+        <div class="footer h-32 bg-gray-300">
+            
         </div>
-    </div>
+    </div> <!-- .body -->
 
     <!-- Scripts -->
     <script src="js/script.js?_=1"></script>

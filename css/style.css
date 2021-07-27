@@ -12,6 +12,10 @@ body {
     background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
 
+.dark-mode .bg-gray-300 {
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+
 .dark-mode .text-blue-800 {
     color: rgba(191, 219, 254, var(--tw-text-opacity));
 }
@@ -35,4 +39,78 @@ h1, h2, h3, h4, h5 {
 
 .dark-mode #emblem path {
     fill: url(#grad2);
+}
+
+.skill-icon-1 {
+    font-size: 4rem;
+}
+.skill-icon-2 {
+    font-size: 3rem;
+}
+.skill-icon-3 {
+    font-size: 2rem;
+}
+
+
+/* Media Queries */
+
+/* sm */
+@media only screen and (min-width: 640px) {
+    .skill-icon-1 {
+        font-size: 6rem;
+    }
+    .skill-icon-2 {
+        font-size: 4rem;
+    }
+    .skill-icon-3 {
+        font-size: 3rem;
+    }
+}
+/* md */
+@media only screen and (min-width: 768px) {
+    .skill-icon-1 {
+        font-size: 8rem;
+    }
+    .skill-icon-2 {
+        font-size: 6rem;
+    }
+    .skill-icon-3 {
+        font-size: 4rem;
+    }
+}
+/* lg */
+@media only screen and (min-width: 1024px) {
+    .skill-icon-1 {
+        font-size: 10rem;
+    }
+    .skill-icon-2 {
+        font-size: 8rem;
+    }
+    .skill-icon-3 {
+        font-size: 6rem;
+    }
+}
+/* xl */
+@media only screen and (min-width: 1280px) {
+    .skill-icon-1 {
+        font-size: 12rem;
+    }
+    .skill-icon-2 {
+        font-size: 10rem;
+    }
+    .skill-icon-3 {
+        font-size: 8rem;
+    }
+}
+/* 2xl */
+@media only screen and (min-width: 1536px) {
+    .skill-icon-1 {
+        font-size: 14rem;
+    }
+    .skill-icon-2 {
+        font-size: 12rem;
+    }
+    .skill-icon-3 {
+        font-size: 10rem;
+    }
 }
