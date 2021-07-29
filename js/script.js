@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('body').removeClass('dark-mode');
     }
 
-    let framerate = 60, theta = 0, velocity = 0, acceleration = 0, accelerationConstant = .015, winding = false, windingVelocity = 1, friction = .03, lastFrame = window.performance.now();
+    var framerate = 60, theta = 0, velocity = 0, acceleration = 0, accelerationConstant = .015, winding = false, windingVelocity = 1, friction = .03, lastFrame = window.performance.now();
     setInterval(animate, 1000/framerate);
 
     function animate() {
@@ -26,6 +26,7 @@ $(document).ready(function() {
         lastFrame = currentFrame;
         let delta = frameLength / (1000/framerate);
         
+        // Emblem animation
         if (winding) {
             velocity = 0;
             acceleration = 0;

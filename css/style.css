@@ -4,16 +4,20 @@ body {
     font-family: Montserrat;
 }
 
-.body {
+body, #header, #footer {
     transition: background-color .3s ease-in-out;
 }
 
-.dark-mode .bg-gray-200 {
+.dark-mode .bg-gray-200, .dark-mode.bg-gray-200 {
     background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
 }
 
 .dark-mode .bg-gray-300 {
     background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+
+.dark-mode .border-gray-800 {
+    border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
 .dark-mode .text-blue-800 {
