@@ -18,19 +18,23 @@ $(document).ready(function() {
         $('body').removeClass('dark-mode');
     }
 
-    let framerate = 60, theta = 0, velocity = 0, acceleration = 0, accelerationConstant = .02, winding = false, windingVelocity = 1, friction = .03;
+    let framerate = 60, theta = 0, velocity = 0, acceleration = 0, accelerationConstant = .015, winding = false, windingVelocity = 1, friction = .03, lastFrame = window.performance.now();
     setInterval(animate, 1000/framerate);
 
     function animate() {
+        let currentFrame = window.performance.now(), frameLength = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+        let delta = frameLength / (1000/framerate);
+        
         if (winding) {
             velocity = 0;
             acceleration = 0;
-            theta += windingVelocity;
+            theta += windingVelocity * delta;
         } else {
             acceleration = -(theta * accelerationConstant);
             velocity += acceleration;
             velocity *= (1-friction);
-            theta += velocity;
+            theta += velocity * delta;
         }
         $('#emblem').css('transform', `rotate(${Math.round(theta)}deg)`);
     }
