@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
-.dark-mode #emblem path {
+.dark-mode #emblem path, .dark-mode #logo path {
     fill: url(#grad2);
 }
 
@@ -53,6 +53,14 @@ h1, h2, h3, h4, h5 {
 }
 .skill-icon-3 {
     font-size: 2rem;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+#logo {
+    margin-right: 2rem;
 }
 
 

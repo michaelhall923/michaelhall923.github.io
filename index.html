@@ -19,13 +19,30 @@
     <div class="text-gray-800 text-sm sm:text-base md:text-lg lg:text-xl">
         <div id="header" class="sticky top-0 bg-gray-200 z-50 border-b border-dashed border-gray-800">
             <div class="container mx-auto px-4">
-                <div class="h-8"></div>
+                <div class="h-4 md:h-8"></div>
                 <div class="flex">
-                    <div class="flex-1">
-            
+                    <div id="logo" data-href="hero" class="flex cursor-pointer">
+                        <svg class="w-8 sm:w-10 md:w-12 lg:w-14" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+                                </linearGradient>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#grad1)" d="M586.3,11.93l-172,296.65h61.66L442.5,365.8H381.07l-59.75,103L261,365.8H380.72l33.19-57.22H227.46L53.7,11.93H0V628.16H62.5V365.8H196.13L162.5,308.58H62.5V137.82L162.85,308.58h64.27l33.51,57.22H196.47l108.12,184h30.82l107.43-184H577.5V628.16H640V11.93Zm-110,296.65L577.5,135.17V308.58Z"/>
+                        </svg>
                     </div>
-                    <div class="select-none">
-                        <div id="dark-mode-toggle" class="text-4xl cursor-pointer">
+                    <nav class="flex items-center flex-1">
+                        <a class="cursor-pointer" data-href="skills">Skills</a>
+                        <a class="cursor-pointer" data-href="projects">Projects</a>
+                        <a class="cursor-pointer" data-href="contact">Contact</a>
+                    </nav>
+                    <div class="select-none flex flex-col justify-center">
+                        <div id="dark-mode-toggle" class="text-3xl md:text-4xl cursor-pointer">
                             <div id="dark-mode-toggle-dark">
                                 <i class="ri-sun-line"></i>
                             </div>
@@ -35,13 +52,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-8"></div>
+                <div class="h-4 md:h-8"></div>
             </div>
         </div>
         <div class="container mx-auto px-4">
-            <div class="mb-16 sm:mb-32 md:mb-48 lg:mb-64"></div>
+            <div class="mb-64 sm:mb-72 md:mb-80 lg:mb-96"></div>
     
-            <div id="hero" class="relative mb-16 sm:mb-32 md:mb-48 lg:mb-64">
+            <div id="hero" class="relative mb-64 sm:mb-72 md:mb-80 lg:mb-96">
                 <div id="emblem" class="absolute right-8 sm:right-16 lg:right-32 top-16 sm:top-8 xl:top-24 2xl:top-8 opacity-90 hover:opacity-50 sm:z-10 transition-opacity duration-300">
                     <!-- <img src="img/mh-emblem.svg" alt="Emblem" class="w-64"> -->
                     <svg class="w-16 sm:w-24 md:w-32 lg:w-40 xl:w-48" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
@@ -64,7 +81,7 @@
                 </div>
             </div>
 
-            <div id="skills" class="text-center mb-16 sm:mb-32 md:mb-48 lg:mb-64">
+            <div id="skills" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
                 <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Skills</h3>
                 <div class="grid grid-cols-3 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
                     <div>
@@ -113,7 +130,7 @@
                 </div>
             </div> <!-- Skills -->
 
-            <div id="projects" class="text-center mb-16 sm:mb-32 md:mb-48 lg:mb-64">
+            <div id="projects" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
                 <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Projects</h3>
                 <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
                     <div>
@@ -149,7 +166,7 @@
                 </div>
             </div> <!-- Projects -->
 
-            <div id="contact" class="text-center mb-16 sm:mb-32 md:mb-48 lg:mb-64">
+            <div id="contact" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
                 <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Contact</h3>
                 <div class="grid grid-cols-1 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
                     <div>
