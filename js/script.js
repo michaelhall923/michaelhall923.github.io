@@ -10,12 +10,14 @@ $(document).ready(function() {
         $('#dark-mode-toggle-dark').addClass('hidden');
         $('#dark-mode-toggle-light').removeClass('hidden');
         $('body').addClass('dark-mode');
+        $("#favicon").attr("href","favicon-dark.png");
     }
 
     function toggleLightMode() {
         $('#dark-mode-toggle-light').addClass('hidden');
         $('#dark-mode-toggle-dark').removeClass('hidden');
         $('body').removeClass('dark-mode');
+        $("#favicon").attr("href","favicon.png");
     }
 
     $('nav a, #logo').on('click', function() {
