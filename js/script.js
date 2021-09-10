@@ -10,32 +10,41 @@ $(document).ready(function() {
         $('#dark-mode-toggle-dark').addClass('hidden');
         $('#dark-mode-toggle-light').removeClass('hidden');
         $('body').addClass('dark-mode');
-        $("#favicon").attr("href","favicon-dark.png");
+        $("#favicon").attr("href", "favicon-dark.png");
     }
 
     function toggleLightMode() {
         $('#dark-mode-toggle-light').addClass('hidden');
         $('#dark-mode-toggle-dark').removeClass('hidden');
         $('body').removeClass('dark-mode');
-        $("#favicon").attr("href","favicon.png");
+        $("#favicon").attr("href", "favicon.png");
     }
 
     $('nav a, #logo').on('click', function() {
         goToByScroll($(this).data('href'));
     });
 
-    function goToByScroll(id){
-        $('html,body').animate({scrollTop: $("#"+id).offset().top-196},'slow');
+    function goToByScroll(id) {
+        $('html,body').animate({ scrollTop: $("#" + id).offset().top - 196 }, 'slow');
     }
 
-    var framerate = 60, theta = 0, velocity = 0, acceleration = 0, accelerationConstant = .015, winding = false, windingVelocity = 1, friction = .03, lastFrame = window.performance.now();
-    setInterval(animate, 1000/framerate);
+    var framerate = 60,
+        theta = 0,
+        velocity = 0,
+        acceleration = 0,
+        accelerationConstant = .015,
+        winding = false,
+        windingVelocity = 1,
+        friction = .03,
+        lastFrame = window.performance.now();
+    setInterval(animate, 1000 / framerate);
 
     function animate() {
-        let currentFrame = window.performance.now(), frameLength = currentFrame - lastFrame;
+        let currentFrame = window.performance.now(),
+            frameLength = currentFrame - lastFrame;
         lastFrame = currentFrame;
-        let delta = frameLength / (1000/framerate);
-        
+        let delta = frameLength / (1000 / framerate);
+
         // Emblem animation
         if (winding) {
             velocity = 0;
@@ -44,7 +53,7 @@ $(document).ready(function() {
         } else {
             acceleration = -(theta * accelerationConstant);
             velocity += acceleration;
-            velocity *= (1-friction);
+            velocity *= (1 - friction);
             theta += velocity * delta;
         }
         $('#emblem').css('transform', `rotate(${Math.round(theta)}deg)`);
