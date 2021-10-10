@@ -1,174 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Hall | Web Developer</title>
-    <link id="favicon" rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      type="image/png"
+      href="favicon.png"
+    />
 
     <!-- Stylesheets & Fonts -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?_=07.29.2021">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css?_=07.29.2021" />
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="bg-gray-200">
+  <body class="bg-gray-200">
     <div class="text-gray-800 text-sm sm:text-base md:text-lg lg:text-xl">
-        <div id="header" class="sticky top-0 bg-gray-200 z-50 border-b border-dashed border-gray-800">
-            <div class="container mx-auto px-4">
-                <div class="h-4 md:h-8"></div>
-                <div class="flex">
-                    <div id="logo" data-href="hero" class="flex cursor-pointer">
-                        <svg class="w-8 sm:w-10 md:w-12 lg:w-14 h-full" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                            <defs>
-                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
-                                </linearGradient>
-                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <path fill="url(#grad1)" d="M586.3,11.93l-172,296.65h61.66L442.5,365.8H381.07l-59.75,103L261,365.8H380.72l33.19-57.22H227.46L53.7,11.93H0V628.16H62.5V365.8H196.13L162.5,308.58H62.5V137.82L162.85,308.58h64.27l33.51,57.22H196.47l108.12,184h30.82l107.43-184H577.5V628.16H640V11.93Zm-110,296.65L577.5,135.17V308.58Z"/>
-                        </svg>
-                    </div>
-                    <nav class="flex items-center flex-1">
-                        <a class="cursor-pointer" data-href="skills">Skills</a>
-                        <a class="cursor-pointer" data-href="projects">Projects</a>
-                        <a class="cursor-pointer" data-href="contact">Contact</a>
-                    </nav>
-                    <div class="select-none flex flex-col justify-center">
-                        <div id="dark-mode-toggle" class="text-3xl md:text-4xl cursor-pointer">
-                            <div id="dark-mode-toggle-dark">
-                                <i class="ri-sun-line"></i>
-                            </div>
-                            <div id="dark-mode-toggle-light" class="hidden">
-                                <i class="ri-moon-line"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-4 md:h-8"></div>
-            </div>
-        </div>
+      <div
+        id="header"
+        class="
+          sticky
+          top-0
+          bg-gray-200
+          z-50
+          border-b border-dashed border-gray-800
+        "
+      >
         <div class="container mx-auto px-4">
-            <div class="mb-64 sm:mb-72 md:mb-80 lg:mb-96"></div>
-
-            <div id="hero" class="relative mb-64 sm:mb-72 md:mb-80 lg:mb-96">
-                <div id="emblem" class="absolute right-8 sm:right-16 lg:right-32 top-20 sm:top-8 xl:top-24 2xl:top-8 opacity-90 hover:opacity-50 sm:z-10 transition-opacity duration-300">
-                    <!-- <img src="img/mh-emblem.svg" alt="Emblem" class="w-64"> -->
-                    <svg class="hidden sm:block w-24 md:w-32 lg:w-40 xl:w-48" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <defs>
-                            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-                              <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
-                              <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
-                            </linearGradient>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                              <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
-                              <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <path fill="url(#grad1)" d="M586.3,11.93l-172,296.65h61.66L442.5,365.8H381.07l-59.75,103L261,365.8H380.72l33.19-57.22H227.46L53.7,11.93H0V628.16H62.5V365.8H196.13L162.5,308.58H62.5V137.82L162.85,308.58h64.27l33.51,57.22H196.47l108.12,184h30.82l107.43-184H577.5V628.16H640V11.93Zm-110,296.65L577.5,135.17V308.58Z"/>
-                    </svg>
-                </div>
-                <div class="relative">
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Hi, my name is <span class="inline-block"><span class="inline-block text-blue-800">Michael Hall</span>,</span>
-                    </h1>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-600">and I make websites.</h2>
-                </div>
+          <div class="h-4 md:h-8"></div>
+          <div class="flex">
+            <div id="logo" data-href="hero" class="flex cursor-pointer">
+              <svg
+                class="w-8 sm:w-10 md:w-12 lg:w-14 h-full"
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <defs>
+                  <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop
+                      offset="0%"
+                      style="stop-color: #3b82f6; stop-opacity: 1"
+                    />
+                    <stop
+                      offset="100%"
+                      style="stop-color: #6366f1; stop-opacity: 1"
+                    />
+                  </linearGradient>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop
+                      offset="0%"
+                      style="stop-color: #4f46e5; stop-opacity: 1"
+                    />
+                    <stop
+                      offset="100%"
+                      style="stop-color: #2563eb; stop-opacity: 1"
+                    />
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#grad1)"
+                  d="M586.3,11.93l-172,296.65h61.66L442.5,365.8H381.07l-59.75,103L261,365.8H380.72l33.19-57.22H227.46L53.7,11.93H0V628.16H62.5V365.8H196.13L162.5,308.58H62.5V137.82L162.85,308.58h64.27l33.51,57.22H196.47l108.12,184h30.82l107.43-184H577.5V628.16H640V11.93Zm-110,296.65L577.5,135.17V308.58Z"
+                />
+              </svg>
             </div>
-
-            <div id="skills" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
-                <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Skills</h3>
-                <div class="grid grid-cols-3 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
-                    <div>
-                        <i class="devicon-html5-plain-wordmark skill-icon-1"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-php-plain skill-icon-1"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-css3-plain-wordmark skill-icon-1"></i>
-                    </div>
+            <nav class="flex items-center flex-1">
+              <a class="cursor-pointer" data-href="skills">Skills</a>
+              <a class="cursor-pointer" data-href="projects">Projects</a>
+              <a class="cursor-pointer" data-href="contact">Contact</a>
+            </nav>
+            <div class="select-none flex flex-col justify-center">
+              <div
+                id="dark-mode-toggle"
+                class="text-3xl md:text-4xl cursor-pointer"
+              >
+                <div id="dark-mode-toggle-dark">
+                  <i class="ri-sun-line"></i>
                 </div>
-                <div class="grid grid-cols-4 mb-10 sm:mb-12 md:mb-14 lg:mb-20">
-                    <div>
-                        <i class="devicon-mysql-plain-wordmark skill-icon-2"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-nodejs-plain-wordmark skill-icon-2"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-git-plain skill-icon-2"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-linux-plain skill-icon-2"></i>
-                    </div>
+                <div id="dark-mode-toggle-light" class="hidden">
+                  <i class="ri-moon-line"></i>
                 </div>
-                <div class="grid grid-cols-6">
-                    <div>
-                        <i class="devicon-sass-plain skill-icon-3"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-laravel-plain-wordmark skill-icon-3"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-java-plain-wordmark skill-icon-3"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-python-plain-wordmark skill-icon-3"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-photoshop-plain skill-icon-3"></i>
-                    </div>
-                    <div>
-                        <i class="devicon-illustrator-plain skill-icon-3"></i>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!-- Skills -->
+          </div>
+          <div class="h-4 md:h-8"></div>
+        </div>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="mb-64 sm:mb-72 md:mb-80 lg:mb-96"></div>
 
-            <div id="projects" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
-                <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Projects</h3>
-                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
-                    <div>
-                        <a target="_blank" href="https://goldtonemusicgroup.com/">
-                            <img class="mb-4" src="img/gtmg.png" alt="">
-                        </a>
-                        <h4 class="text-sm sm:text-md md:text-lg lg:text-xl">
-                            <a target="_blank" href="https://goldtonemusicgroup.com/">
-                                Gold Tone Music Group
-                            </a>
-                            <div class="font-normal">
-                                <em>
-                                    PHP, MySQL, Bootstrap, SCSS, JS, jQuery
-                                </em>
-                            </div>
-                        </h4>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://goldtonemusicgroup.com/articles">
-                            <img class="mb-4" src="img/gtmg-blog.png" alt="">
-                        </a>
-                        <h4 class="text-sm sm:text-md md:text-lg lg:text-xl">
-                            <a target="_blank" href="https://goldtonemusicgroup.com/articles">
-                                Gold Tone Blog
-                            </a>
-                            <div class="font-normal">
-                                <em>
-                                    WordPress
-                                </em>
-                            </div>
-                        </h4>
-                    </div>
-                    <!-- <div>
+        <div id="hero" class="relative mb-64 sm:mb-72 md:mb-80 lg:mb-96">
+          <div
+            id="emblem"
+            class="
+              absolute
+              right-8
+              sm:right-16
+              lg:right-32
+              top-20
+              sm:top-8
+              xl:top-24
+              2xl:top-8
+              opacity-90
+              hover:opacity-50
+              sm:z-10
+              transition-opacity
+              duration-300
+            "
+          >
+            <!-- <img src="img/mh-emblem.svg" alt="Emblem" class="w-64"> -->
+            <svg
+              class="hidden sm:block w-24 md:w-32 lg:w-40 xl:w-48"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <defs>
+                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: #3b82f6; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #6366f1; stop-opacity: 1"
+                  />
+                </linearGradient>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: #4f46e5; stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #2563eb; stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#grad1)"
+                d="M586.3,11.93l-172,296.65h61.66L442.5,365.8H381.07l-59.75,103L261,365.8H380.72l33.19-57.22H227.46L53.7,11.93H0V628.16H62.5V365.8H196.13L162.5,308.58H62.5V137.82L162.85,308.58h64.27l33.51,57.22H196.47l108.12,184h30.82l107.43-184H577.5V628.16H640V11.93Zm-110,296.65L577.5,135.17V308.58Z"
+              />
+            </svg>
+          </div>
+          <div class="relative">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+              Hi, my name is
+              <span class="inline-block"
+                ><span class="inline-block text-blue-800">Michael Hall</span
+                >,</span
+              >
+            </h1>
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-gray-600"
+            >
+              and I make websites.
+            </h2>
+          </div>
+        </div>
+
+        <div id="skills" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
+          <h3
+            class="
+              text-xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              mb-8
+              sm:mb-10
+              md:mb-12
+              lg:mb-14
+            "
+          >
+            Skills
+          </h3>
+          <div class="grid grid-cols-3 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
+            <div>
+              <i class="devicon-html5-plain-wordmark skill-icon-1"></i>
+            </div>
+            <div>
+              <i class="devicon-php-plain skill-icon-1"></i>
+            </div>
+            <div>
+              <i class="devicon-css3-plain-wordmark skill-icon-1"></i>
+            </div>
+          </div>
+          <div class="grid grid-cols-4 mb-10 sm:mb-12 md:mb-14 lg:mb-20">
+            <div>
+              <i class="devicon-mysql-plain-wordmark skill-icon-2"></i>
+            </div>
+            <div>
+              <i class="devicon-nodejs-plain-wordmark skill-icon-2"></i>
+            </div>
+            <div>
+              <i class="devicon-git-plain skill-icon-2"></i>
+            </div>
+            <div>
+              <i class="devicon-linux-plain skill-icon-2"></i>
+            </div>
+          </div>
+          <div class="grid grid-cols-6">
+            <div>
+              <i class="devicon-sass-plain skill-icon-3"></i>
+            </div>
+            <div>
+              <i class="devicon-laravel-plain-wordmark skill-icon-3"></i>
+            </div>
+            <div>
+              <i class="devicon-java-plain-wordmark skill-icon-3"></i>
+            </div>
+            <div>
+              <i class="devicon-python-plain-wordmark skill-icon-3"></i>
+            </div>
+            <div>
+              <i class="devicon-photoshop-plain skill-icon-3"></i>
+            </div>
+            <div>
+              <i class="devicon-illustrator-plain skill-icon-3"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Skills -->
+
+        <div id="projects" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
+          <h3
+            class="
+              text-xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              mb-8
+              sm:mb-10
+              md:mb-12
+              lg:mb-14
+            "
+          >
+            Projects
+          </h3>
+          <div
+            class="
+              grid grid-cols-2
+              lg:grid-cols-3
+              gap-4
+              sm:gap-6
+              md:gap-8
+              lg:gap-10
+            "
+          >
+            <div>
+              <a target="_blank" href="https://goldtonemusicgroup.com/">
+                <img class="mb-4" src="img/gtmg.png" alt="" />
+              </a>
+              <h4 class="text-sm sm:text-md md:text-lg lg:text-xl">
+                <a target="_blank" href="https://goldtonemusicgroup.com/">
+                  Gold Tone Music Group
+                </a>
+                <div class="font-normal">
+                  <em> PHP, MySQL, Bootstrap, SCSS, JS, jQuery </em>
+                </div>
+              </h4>
+            </div>
+            <div>
+              <a target="_blank" href="https://goldtonemusicgroup.com/articles">
+                <img class="mb-4" src="img/gtmg-blog.png" alt="" />
+              </a>
+              <h4 class="text-sm sm:text-md md:text-lg lg:text-xl">
+                <a
+                  target="_blank"
+                  href="https://goldtonemusicgroup.com/articles"
+                >
+                  Gold Tone Blog
+                </a>
+                <div class="font-normal">
+                  <em> WordPress </em>
+                </div>
+              </h4>
+            </div>
+            <div>
+              <a target="_blank" href="https://www.btcin5.com/">
+                <img class="mb-4" src="img/btcin5.png" alt="" />
+              </a>
+              <h4 class="text-sm sm:text-md md:text-lg lg:text-xl">
+                <a target="_blank" href="https://www.btcin5.com/">
+                  Bitcoin In 5
+                </a>
+                <div class="font-normal">
+                  <em> Next.js, Tailwindcss </em>
+                </div>
+              </h4>
+            </div>
+            <!-- <div>
                         <a target="_blank" href="https://example.com/">
                             <img class="mb-4" src="https://picsum.photos/600/400" alt="">
                         </a>
@@ -178,38 +322,78 @@
                             </a>
                         </h4>
                     </div> -->
-                </div>
-            </div>
-            <!-- Projects -->
-
-            <div id="contact" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
-                <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-8 sm:mb-10 md:mb-12 lg:mb-14">Contact</h3>
-                <div class="grid grid-cols-1 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
-                    <div>
-                        <div class="mb-4">
-                            <a href="mailto:michaelhall923@protonmail.com">michaelhall923@protonmail.com</a>
-                        </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/michael-hall-bb5671a9/">LinkedIn <i class="devicon-linkedin-plain"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-        <!-- .container -->
-        <div id="footer" class="footer h-32 bg-gray-300 text-center relative border-t border-dashed border-gray-800">
-            <div class="flex flex-col justify-center content-center h-32 absolute w-full">
-                <div>
-                    <a class="hover:underline" target="_blank" href="https://github.com/michaelhall923/portfolio">Check out this page's source code on Github <i class="devicon-github-plain"></i></a>
-                </div>
+        <!-- Projects -->
+
+        <div id="contact" class="text-center mb-64 sm:mb-72 md:mb-80 lg:mb-96">
+          <h3
+            class="
+              text-xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              mb-8
+              sm:mb-10
+              md:mb-12
+              lg:mb-14
+            "
+          >
+            Contact
+          </h3>
+          <div class="grid grid-cols-1 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
+            <div>
+              <div class="mb-4">
+                <a href="mailto:michaelhall923@protonmail.com"
+                  >michaelhall923@protonmail.com</a
+                >
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/michael-hall-bb5671a9/"
+                  >LinkedIn <i class="devicon-linkedin-plain"></i
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- .container -->
+      <div
+        id="footer"
+        class="
+          footer
+          h-32
+          bg-gray-300
+          text-center
+          relative
+          border-t border-dashed border-gray-800
+        "
+      >
+        <div
+          class="
+            flex flex-col
+            justify-center
+            content-center
+            h-32
+            absolute
+            w-full
+          "
+        >
+          <div>
+            <a
+              class="hover:underline"
+              target="_blank"
+              href="https://github.com/michaelhall923/portfolio"
+              >Check out this page's source code on Github
+              <i class="devicon-github-plain"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- .body -->
 
     <!-- Scripts -->
     <script src="js/script.js?_=07.29.2021--21:20"></script>
-</body>
-
+  </body>
 </html>
